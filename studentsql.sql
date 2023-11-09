@@ -37,3 +37,13 @@ foreign key(std_id) references student(std_id)
 insert into Employee values('Bg','da','123','Bh','KFC','123456','20');
 
 insert into Employee(Emp_id,std_id,id,name,phone)values('ch','da','123','Bh','123456');
+use dbTest;
+create table Customer(
+	User_id varchar(10) NOT NULL,
+	User_name varchar(100) NOT NULL,
+	User_age int check(User_age  between 18 and 50),
+	primary key(User_id)
+
+
+
+)
